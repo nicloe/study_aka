@@ -7,12 +7,23 @@
     dpkg -l
 #find out the process
     ps aux|grep software
-#打补订
+#make patch
     diff -u a b>ab.diff
     patch a<ab.diff
-#删除版本
-    git checkout 编码
-    ##返回到未删之前的版本
+#delete edition
+    git checkout SerialNumber
+    ##return the delete edition
         git branch
         git checkout master
-
+#show code on net
+    vim h.md
+    markdown h.md >h.html
+    firefox h.md
+#how to go to the other user's PC
+    ssh PC@IP address
+#delete the new edition
+    git reset --hard HEAD^
+#edit the edition by another person
+    git config --global user.name "name"
+    vim .gitconfig
+#
